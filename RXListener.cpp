@@ -63,14 +63,14 @@ void RXListener::sampleSignal(byte* dataHigh, byte* dataLow)
 int dataCounter = 0;
   for(int i=0; i<dataSize; i++){
     
-    //Identify the length of the LOW signal---------------LOW
+    //length of low
     dataCounter=0; //reset the counter
     while(analogRead(rfRxPin)>upperThreshold && dataCounter<maxSignalLength){
       dataCounter++;
     }
     dataLow[i]=dataCounter;
     
-    //Identify the length of the HIGH signal---------------HIGH
+    //length of high
     dataCounter=0;//reset the counter
     while(analogRead(rfRxPin)<lowerThreshold && dataCounter<maxSignalLength){
       dataCounter++;
@@ -82,6 +82,7 @@ int dataCounter = 0;
 	dataLow[i] = calibrateValue(dataLow[i]);
 	dataHigh[i] = calibrateValue(dataHigh[i]);
 	}
+	// for testing purposes
    	//printSignal(dataHigh, dataLow);
 	//delay(10000);
 }
