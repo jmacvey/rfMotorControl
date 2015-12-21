@@ -3,6 +3,9 @@
 // @author Joshua MacVey
 //--------------------------------------------------------------------------
 
+#ifndef RX_LISTENER_H
+#define RX_LISTENER_H
+
 class RXListener {
 
 public:
@@ -77,3 +80,5 @@ const int maxSignalLength = 255;
 int dataCounter = 0;
 const int dataSize;
 };
+
+#endif
