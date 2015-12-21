@@ -1,0 +1,6 @@
+This project was written in an attempt to utilize an Arduino Uno motorShield to control forward reverse action
+using a dual-solenoid switch and H-Bridge.  Signals were decoded using frequency analysis which was documented
+through importing data collected through the RXListener class to Excel for further analysis.  Code is written
+such that users can inherit from the RXListener to implement the basic parts of the algorithm used to listen
+for signals (i.e. data sampling, calibration/noise reduction, and registration of the signal).  Any questions
+don't hesitate to e-mail.  Thanks.
