@@ -3,7 +3,7 @@
 // @author Joshua MacVey
 //--------------------------------------------------------------------------
 
-#include "frMotor.h"
+#include "FRMotor.h"
 
 
 FRMotor::FRMotor(int rfRxPin, const byte* lowIn, const byte* lowOut,
