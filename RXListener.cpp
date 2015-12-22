@@ -3,6 +3,8 @@
 // @author Joshua MacVey
 //--------------------------------------------------------------------------
 
+#include "RXListener.h"
+
 RXListener::RXListener(int rfRxPin, int baudRate, int dataSize, 
 		       int upperThreshold, int lowerThreshold): 
 		 rfRxPin(rfRxPin), baudRate(baudRate),
